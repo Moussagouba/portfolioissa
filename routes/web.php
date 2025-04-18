@@ -19,3 +19,6 @@ Route::get('/devis/confirmation', [ServiceController::class, 'quoteSuccess'])->n
 
 // Route pour la page des compétences (skills)
 Route::get('/skills', [SkillController::class, 'index'])->name('skill.index');
+
+
+

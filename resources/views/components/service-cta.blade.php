@@ -1,7 +1,7 @@
 <section class="px-6 md:px-12 py-16 bg-darkCard rounded-xl mx-6 md:mx-12 mb-16 relative overflow-hidden">
     <div class="relative z-10 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
-            Transform Your Ideas into Impactful Designs
+            Transformez Vos Idées en Designs Percutants
         </h2>
         <a href="{{ route('service.quote') }}" class="bg-neonGreen text-black px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all inline-block">
             Demander un devis

@@ -16,27 +16,27 @@ class SkillController extends Controller
     {
         // Récupérer les services pour afficher les compétences
         $services = Service::orderBy('order')->get();
-        
+
         // Regrouper les services par catégorie pour les afficher dans différentes sections
         $designServices = $services->filter(function($service) {
             return in_array($service->slug, ['graphic-design', 'ui-ux-design']);
         });
-        
-        $developmentServices = $services->filter(function($service) {
-            return in_array($service->slug, ['web-design', 'mobile-design']);
+
+        $printServices = $services->filter(function($service) {
+            return in_array($service->slug, ['print-design']);
         });
-        
-        $marketingServices = $services->filter(function($service) {
-            return in_array($service->slug, ['branding', 'print-design']);
+
+        $brandingServices = $services->filter(function($service) {
+            return in_array($service->slug, ['branding']);
         });
-        
+
         return view('skill.index', [
             'title' => 'Mes Compétences | Issa Cissé - Graphiste',
             'bodyClass' => 'bg-darkBg text-white',
             'services' => $services,
             'designServices' => $designServices,
-            'developmentServices' => $developmentServices,
-            'marketingServices' => $marketingServices
+            'printServices' => $printServices,
+            'brandingServices' => $brandingServices
         ]);
     }
 }

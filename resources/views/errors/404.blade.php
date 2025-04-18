@@ -7,16 +7,16 @@
     <!-- 404 Error Section -->
     <section class="px-6 md:px-12 py-24 md:py-32 flex flex-col items-center justify-center text-center">
         <h1 class="text-6xl md:text-7xl font-bold mb-4">
-            404, Oops!
+            404, Oups !
         </h1>
         <h2 class="text-4xl md:text-5xl font-bold mb-6">
-            Page Not Found
+            Page Non Trouvée
         </h2>
         <p class="text-grayText max-w-lg mb-10">
-            It seems the page you're looking for doesn't exist or has been moved. Don't worry, let's get you back on track!
+            Il semble que la page que vous recherchez n'existe pas ou a été déplacée. Pas d'inquiétude, revenons sur la bonne voie !
         </p>
         <a href="{{ route('home') }}" class="bg-neonGreen text-black px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all inline-block">
-            Go Home
+            Retour à l'Accueil
         </a>
     </section>
 
@@ -25,13 +25,13 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <!-- Left Column -->
             <div>
-                <h2 class="text-3xl font-bold mb-4">Let's Work Together and Create</h2>
-                <p class="text-2xl text-grayText mb-8">Something Extraordinary!</p>
-                
+                <h2 class="text-3xl font-bold mb-4">Travaillons Ensemble pour Créer</h2>
+                <p class="text-2xl text-grayText mb-8">Quelque Chose d'Extraordinaire !</p>
+
                 <div class="mb-8">
-                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <h3 class="text-xl font-bold mb-4">Suivez-moi</h3>
                     <p class="text-grayText mb-4">
-                        Stay connected and inspired! Follow us on our social media platforms to keep up with the latest design trends, project updates, and behind-the-scenes insights.
+                        Restez connecté et inspiré ! Suivez-moi sur les réseaux sociaux pour découvrir mes dernières créations graphiques, les mises à jour de projets et les coulisses de mon travail.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="w-10 h-10 bg-darkCard rounded-full flex items-center justify-center hover:bg-neonGreen hover:text-black transition-all">
@@ -57,22 +57,22 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Right Column - Contact Form -->
             <div>
-                <h2 class="text-2xl font-bold mb-6 text-center">Let's Work Together!</h2>
+                <h2 class="text-2xl font-bold mb-6 text-center">Travaillons Ensemble !</h2>
                 <form class="bg-darkCard p-6 rounded-xl">
                     <div class="mb-4">
-                        <input type="text" placeholder="Your Name" class="w-full bg-darkBg border border-darkCard rounded-lg p-3 text-white focus:outline-none focus:border-neonGreen">
+                        <input type="text" placeholder="Votre Nom" class="w-full bg-darkBg border border-darkCard rounded-lg p-3 text-white focus:outline-none focus:border-neonGreen">
                     </div>
                     <div class="mb-4">
-                        <input type="email" placeholder="Your Email" class="w-full bg-darkBg border border-darkCard rounded-lg p-3 text-white focus:outline-none focus:border-neonGreen">
+                        <input type="email" placeholder="Votre Email" class="w-full bg-darkBg border border-darkCard rounded-lg p-3 text-white focus:outline-none focus:border-neonGreen">
                     </div>
                     <div class="mb-6">
-                        <textarea placeholder="Describe Your Case" rows="6" class="w-full bg-darkBg border border-darkCard rounded-lg p-3 text-white focus:outline-none focus:border-neonGreen resize-none"></textarea>
+                        <textarea placeholder="Décrivez votre projet graphique" rows="6" class="w-full bg-darkBg border border-darkCard rounded-lg p-3 text-white focus:outline-none focus:border-neonGreen resize-none"></textarea>
                     </div>
                     <button class="w-full bg-neonGreen text-black py-3 rounded-full font-medium hover:bg-opacity-90 transition-all">
-                        Send Message
+                        Envoyer le Message
                     </button>
                 </form>
             </div>

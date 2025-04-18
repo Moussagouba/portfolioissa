@@ -8,12 +8,12 @@
     <section class="px-6 md:px-12 py-16 md:py-24 flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-10 md:mb-0">
             <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Design with Empathy,<br>
-                Collaborate with Purpose,<br>
-                <span class="text-neonGreen">Innovate Together</span>
+                Design avec Empathie,<br>
+                Collaboration avec Intention,<br>
+                <span class="text-neonGreen">Innovation Ensemble</span>
             </h1>
             <p class="text-grayText mb-8 max-w-lg">
-                Transforming ideas into impactful designs that connect with your audience and drive results.
+                Transformer vos idées en designs percutants qui connectent avec votre audience et génèrent des résultats.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('service.quote') }}" class="bg-neonGreen text-black px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all inline-block text-center">
@@ -24,7 +24,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="md:w-1/2 relative">
             <div class="bg-darkCard rounded-xl overflow-hidden relative">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
@@ -38,8 +38,8 @@
     <!-- Services Overview -->
     <section class="px-6 md:px-12 py-16 bg-black/30">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-2">Expertise in Design, Innovation, <br>Exceptional Design for Every Need</h2>
-            <p class="text-grayText">Delivering creative solutions that transform your vision into reality</p>
+            <h2 class="text-3xl font-bold mb-2">Expertise en Design, Innovation, <br>Design Exceptionnel pour Chaque Besoin</h2>
+            <p class="text-grayText">Des solutions créatives qui transforment votre vision en réalité</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,9 +50,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Effective Communication</h3>
+                <h3 class="text-xl font-bold mb-3">Communication Efficace</h3>
                 <p class="text-grayText">
-                    Clear and consistent communication throughout the design process ensures that your vision is understood and executed with precision.
+                    Une communication claire et cohérente tout au long du processus de design garantit que votre vision est comprise et exécutée avec précision.
                 </p>
             </div>
 
@@ -63,9 +63,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Collaborative Mindset</h3>
+                <h3 class="text-xl font-bold mb-3">Esprit Collaboratif</h3>
                 <p class="text-grayText">
-                    Working closely with you as a partner to ensure that your goals are met and your vision is brought to life through collaborative design.
+                    Je travaille en étroite collaboration avec vous pour garantir que vos objectifs sont atteints et que votre vision prend vie grâce à un design collaboratif.
                 </p>
             </div>
 
@@ -76,9 +76,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Empathy and User-Centered Thinking</h3>
+                <h3 class="text-xl font-bold mb-3">Empathie et Approche Centrée sur l'Utilisateur</h3>
                 <p class="text-grayText">
-                    Designing with the end-user in mind, creating intuitive and engaging experiences that resonate with your target audience.
+                    Je conçois en pensant à l'utilisateur final, créant des expériences visuelles intuitives et engageantes qui résonnent avec votre public cible.
                 </p>
             </div>
         </div>
@@ -87,8 +87,8 @@
     <!-- Capabilities Section -->
     <section id="capabilities" class="px-6 md:px-12 py-16">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-2">Showcasing Design Excellence</h2>
-            <p class="text-xl">Visualize Our Core Capabilities</p>
+            <h2 class="text-3xl font-bold mb-2">Démontrer l'Excellence en Design</h2>
+            <p class="text-xl">Visualisez Mes Compétences Principales</p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -154,7 +154,7 @@
     <!-- Skills Section -->
     <section class="px-6 md:px-12 py-16 bg-black/30">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-2">Design with Empathy, Collaborate with Purpose, Innovate Together</h2>
+            <h2 class="text-3xl font-bold mb-2">Design avec Empathie, Collaboration avec Intention, Innovation Ensemble</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -170,7 +170,7 @@
                     <div class="h-1 bg-neonGreen" style="width: 95%"></div>
                 </div>
                 <p class="text-grayText mb-8">
-                    Creating intuitive and engaging user experiences that drive engagement and conversion.
+                    Création d'expériences utilisateur intuitives et engageantes qui favorisent l'engagement et la conversion.
                 </p>
 
                 <!-- Skill 2 -->
@@ -184,7 +184,7 @@
                     <div class="h-1 bg-neonGreen" style="width: 92%"></div>
                 </div>
                 <p class="text-grayText mb-8">
-                    Crafting visually stunning designs that capture attention and communicate your brand message.
+                    Élaboration de designs visuellement impressionnants qui captent l'attention et communiquent le message de votre marque.
                 </p>
             </div>
 
@@ -200,7 +200,7 @@
                     <div class="h-1 bg-neonGreen" style="width: 90%"></div>
                 </div>
                 <p class="text-grayText mb-8">
-                    Building interactive prototypes that bring your ideas to life and facilitate user testing.
+                    Construction de prototypes interactifs qui donnent vie à vos idées et facilitent les tests utilisateurs.
                 </p>
 
                 <!-- Skill 4 -->
@@ -214,19 +214,19 @@
                     <div class="h-1 bg-neonGreen" style="width: 88%"></div>
                 </div>
                 <p class="text-grayText mb-8">
-                    Facilitating effective communication and collaboration throughout the design process.
+                    Facilitation d'une communication et d'une collaboration efficaces tout au long du processus de design.
                 </p>
             </div>
 
             <!-- Skill Category 3 (Image) -->
             <div class="relative">
-                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                      alt="Designer working" class="w-full h-full object-cover rounded-xl">
                 <div class="absolute inset-0 bg-gradient-to-t from-darkBg/80 to-transparent rounded-xl"></div>
                 <div class="absolute bottom-6 left-6 right-6">
-                    <h3 class="text-xl font-bold mb-2">Transforming Ideas into Reality</h3>
+                    <h3 class="text-xl font-bold mb-2">Transformer les Idées en Réalité</h3>
                     <p class="text-sm text-grayText">
-                        With a focus on user-centered design and a collaborative approach, I help bring your vision to life.
+                        Avec une approche centrée sur l'utilisateur et un esprit collaboratif, j'aide à donner vie à votre vision.
                     </p>
                 </div>
             </div>
@@ -236,78 +236,78 @@
     <!-- FAQ Section -->
     <section class="px-6 md:px-12 py-16">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-2">Clear Answers to your Questions, Ensuring a</h2>
-            <p class="text-xl">Smooth Design Journey</p>
+            <h2 class="text-3xl font-bold mb-2">Des Réponses Claires à vos Questions, Garantissant</h2>
+            <p class="text-xl">Un Parcours de Design Fluide</p>
         </div>
 
         <div class="max-w-3xl mx-auto">
             <!-- FAQ Item 1 -->
             <div class="border-b border-darkCard py-6" x-data="{ open: false }">
                 <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
-                    <h3 class="text-xl font-medium">1. What is the process for working with you?</h3>
-                    <svg class="w-6 h-6 text-neonGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+                    <h3 class="text-xl font-medium">1. Quel est le processus de travail avec vous ?</h3>
+                    <svg class="w-6 h-6 text-neonGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          :class="{'rotate-180': open}">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </div>
                 <div class="mt-4 text-grayText" x-show="open" x-collapse>
-                    <p>The process begins with an initial consultation where we discuss your project goals. I then provide design concepts, followed by revisions based on your feedback. Once the designs are approved, I deliver the final assets for your project.</p>
+                    <p>Le processus commence par une consultation initiale où nous discutons des objectifs de votre projet. Je fournis ensuite des concepts de design, suivis de révisions basées sur vos retours. Une fois les designs approuvés, je livre les éléments finaux pour votre projet.</p>
                 </div>
             </div>
 
             <!-- FAQ Item 2 -->
             <div class="border-b border-darkCard py-6" x-data="{ open: false }">
                 <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
-                    <h3 class="text-xl font-medium">2. How do I know which plan is right for my project?</h3>
+                    <h3 class="text-xl font-medium">2. Comment savoir quel forfait convient à mon projet ?</h3>
                     <svg class="w-6 h-6 text-neonGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          :class="{'rotate-180': open}">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </div>
                 <div class="mt-4 text-grayText" x-show="open" x-collapse>
-                    <p>During our initial consultation, we'll discuss your project requirements, timeline, and budget. Based on this information, I'll recommend the most suitable plan for your needs. You can always upgrade or adjust your plan as your project evolves.</p>
+                    <p>Lors de notre consultation initiale, nous discuterons des exigences de votre projet, du calendrier et du budget. Sur la base de ces informations, je vous recommanderai le forfait le plus adapté à vos besoins. Vous pouvez toujours mettre à niveau ou ajuster votre forfait au fur et à mesure que votre projet évolue.</p>
                 </div>
             </div>
 
             <!-- FAQ Item 3 -->
             <div class="border-b border-darkCard py-6" x-data="{ open: false }">
                 <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
-                    <h3 class="text-xl font-medium">3. Can I make changes to the design after the final delivery?</h3>
+                    <h3 class="text-xl font-medium">3. Puis-je apporter des modifications au design après la livraison finale ?</h3>
                     <svg class="w-6 h-6 text-neonGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          :class="{'rotate-180': open}">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </div>
                 <div class="mt-4 text-grayText" x-show="open" x-collapse>
-                    <p>Yes, I offer a revision period after final delivery. Minor adjustments are included in your package. For more significant changes, we can discuss additional revisions at a reasonable rate. I'm committed to ensuring you're completely satisfied with the final product.</p>
+                    <p>Oui, j'offre une période de révision après la livraison finale. Les ajustements mineurs sont inclus dans votre forfait. Pour des changements plus importants, nous pouvons discuter de révisions supplémentaires à un tarif raisonnable. Je m'engage à garantir que vous soyez entièrement satisfait du produit final.</p>
                 </div>
             </div>
 
             <!-- FAQ Item 4 -->
             <div class="border-b border-darkCard py-6" x-data="{ open: false }">
                 <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
-                    <h3 class="text-xl font-medium">4. What's included in the prototyping service?</h3>
+                    <h3 class="text-xl font-medium">4. Qu'est-ce qui est inclus dans le service de prototypage ?</h3>
                     <svg class="w-6 h-6 text-neonGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          :class="{'rotate-180': open}">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </div>
                 <div class="mt-4 text-grayText" x-show="open" x-collapse>
-                    <p>The prototyping service includes creating interactive mockups of your design that simulate the user experience. This allows you to test functionality and user flow before development. Prototypes can be created in various fidelity levels depending on your needs, from simple wireframes to fully interactive high-fidelity prototypes.</p>
+                    <p>Le service de prototypage comprend la création de maquettes interactives de votre design qui simulent l'expérience utilisateur. Cela vous permet de tester la fonctionnalité et le flux utilisateur avant la production finale. Les prototypes peuvent être créés à différents niveaux de fidélité selon vos besoins, des wireframes simples aux prototypes haute fidélité entièrement interactifs.</p>
                 </div>
             </div>
 
             <!-- FAQ Item 5 -->
             <div class="border-b border-darkCard py-6" x-data="{ open: false }">
                 <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
-                    <h3 class="text-xl font-medium">5. How long will it take to complete my project?</h3>
+                    <h3 class="text-xl font-medium">5. Combien de temps faudra-t-il pour terminer mon projet ?</h3>
                     <svg class="w-6 h-6 text-neonGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          :class="{'rotate-180': open}">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </div>
                 <div class="mt-4 text-grayText" x-show="open" x-collapse>
-                    <p>Project timelines vary depending on the scope and complexity. A simple website design might take 2-3 weeks, while a comprehensive brand identity could take 4-6 weeks. During our initial consultation, I'll provide a detailed timeline based on your specific project requirements.</p>
+                    <p>Les délais des projets varient en fonction de la portée et de la complexité. Une conception graphique simple peut prendre 1-2 semaines, tandis qu'une identité de marque complète pourrait prendre 3-4 semaines. Lors de notre consultation initiale, je vous fournirai un calendrier détaillé basé sur les exigences spécifiques de votre projet.</p>
                 </div>
             </div>
         </div>
@@ -317,13 +317,13 @@
     <section class="px-6 md:px-12 py-16 bg-darkCard rounded-xl mx-6 md:mx-12 mb-16 relative overflow-hidden">
         <div class="relative z-10 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Transform Your Ideas into Reality
+                Transformez Vos Idées en Réalité
             </h2>
             <p class="text-grayText mb-8 max-w-2xl mx-auto">
-                Ready to bring your vision to life? Let's collaborate and create something extraordinary together.
+                Prêt à donner vie à votre vision ? Collaborons et créons ensemble quelque chose d'extraordinaire.
             </p>
             <a href="{{ route('service.quote') }}" class="bg-neonGreen text-black px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all inline-block">
-                Let's Work Together
+                Travaillons Ensemble
             </a>
         </div>
 
