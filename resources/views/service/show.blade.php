@@ -51,7 +51,7 @@
 
     <!-- Process Section -->
     <section class="px-6 md:px-12 py-16 bg-black/30">
-        <h2 class="text-3xl font-bold mb-12 text-center">Notre Processus de {{ $service->title }}</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center">Mon Processus de {{ $service->title }}</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <!-- Process Step 1 -->
@@ -59,7 +59,7 @@
                 <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-neonGreen text-black flex items-center justify-center font-bold">1</div>
                 <h3 class="text-xl font-bold mb-3 mt-2">Consultation</h3>
                 <p class="text-grayText">
-                    Nous discutons de vos besoins, objectifs et attentes pour comprendre parfaitement votre projet.
+                    Je discute de vos besoins, objectifs et attentes pour comprendre parfaitement votre projet.
                 </p>
             </div>
 
@@ -68,7 +68,7 @@
                 <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-neonGreen text-black flex items-center justify-center font-bold">2</div>
                 <h3 class="text-xl font-bold mb-3 mt-2">Conception</h3>
                 <p class="text-grayText">
-                    Nous créons des concepts et des maquettes basés sur vos exigences et votre identité de marque.
+                    Je crée des concepts et des maquettes basés sur vos exigences et votre identité de marque.
                 </p>
             </div>
 
@@ -77,7 +77,7 @@
                 <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-neonGreen text-black flex items-center justify-center font-bold">3</div>
                 <h3 class="text-xl font-bold mb-3 mt-2">Révisions</h3>
                 <p class="text-grayText">
-                    Nous affinons les designs en fonction de vos retours jusqu'à obtenir le résultat parfait.
+                    J'affine les designs en fonction de vos retours jusqu'à obtenir le résultat parfait.
                 </p>
             </div>
 
@@ -86,7 +86,7 @@
                 <div class="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-neonGreen text-black flex items-center justify-center font-bold">4</div>
                 <h3 class="text-xl font-bold mb-3 mt-2">Livraison</h3>
                 <p class="text-grayText">
-                    Nous livrons les fichiers finaux dans tous les formats nécessaires pour votre projet.
+                    Je livre les fichiers finaux dans tous les formats nécessaires pour votre projet.
                 </p>
             </div>
         </div>
@@ -106,7 +106,7 @@
                 </div>
                 <h3 class="text-white text-xl font-bold mb-3">{{ $relatedService->title }}</h3>
                 <p class="text-grayText mb-4">
-                    Découvrez notre service de {{ $relatedService->title }} pour compléter votre projet.
+                    Découvrez mon service de {{ $relatedService->title }} pour compléter votre projet.
                 </p>
                 <a href="{{ route('service.show', $relatedService) }}" class="inline-flex items-center text-neonGreen font-medium">
                     En savoir plus

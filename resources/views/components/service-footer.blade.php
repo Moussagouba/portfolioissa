@@ -7,6 +7,7 @@
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">À propos</a></li>
                 <li><a href="{{ route('service.index') }}" class="text-grayText hover:text-neonGreen transition-colors">Services</a></li>
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Portfolio</a></li>
+                <li><a href="{{ route('skill.index') }}" class="text-grayText hover:text-neonGreen transition-colors">Compétences</a></li>
                 <li><a href="{{ route('service.quote') }}" class="text-grayText hover:text-neonGreen transition-colors">Demande de devis</a></li>
             </ul>
         </div>
@@ -15,7 +16,7 @@
             <h3 class="font-bold mb-4">À propos</h3>
             <ul class="space-y-2">
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Biographie</a></li>
-                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Équipe</a></li>
+                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Parcours</a></li>
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Carrière</a></li>
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Témoignages</a></li>
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">FAQ</a></li>
@@ -25,22 +26,22 @@
         <div>
             <h3 class="font-bold mb-4">Portfolio</h3>
             <ul class="space-y-2">
-                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Projects</a></li>
-                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Case Studies</a></li>
+                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Projets</a></li>
+                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Études de cas</a></li>
                 <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Clients</a></li>
-                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Past Work</a></li>
-                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Testimonials</a></li>
+                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Travaux précédents</a></li>
+                <li><a href="#" class="text-grayText hover:text-neonGreen transition-colors">Témoignages</a></li>
             </ul>
         </div>
 
         <div>
             <h3 class="font-bold mb-4">Services</h3>
             <ul class="space-y-2">
-                <li><a href="{{ route('service.show', 'web-design') }}" class="text-grayText hover:text-neonGreen transition-colors">Web Design</a></li>
-                <li><a href="{{ route('service.show', 'ui-ux-design') }}" class="text-grayText hover:text-neonGreen transition-colors">UI/UX Design</a></li>
-                <li><a href="{{ route('service.show', 'mobile-design') }}" class="text-grayText hover:text-neonGreen transition-colors">Design Mobile</a></li>
-                <li><a href="{{ route('service.show', 'branding') }}" class="text-grayText hover:text-neonGreen transition-colors">Branding</a></li>
                 <li><a href="{{ route('service.show', 'graphic-design') }}" class="text-grayText hover:text-neonGreen transition-colors">Design Graphique</a></li>
+                <li><a href="{{ route('service.show', 'ui-ux-design') }}" class="text-grayText hover:text-neonGreen transition-colors">Design d'Interface</a></li>
+                <li><a href="{{ route('service.show', 'print-design') }}" class="text-grayText hover:text-neonGreen transition-colors">Design d'Impression</a></li>
+                <li><a href="{{ route('service.show', 'branding') }}" class="text-grayText hover:text-neonGreen transition-colors">Identité de Marque</a></li>
+                <li><a href="{{ route('service.show', 'illustration') }}" class="text-grayText hover:text-neonGreen transition-colors">Illustration</a></li>
             </ul>
         </div>
     </div>

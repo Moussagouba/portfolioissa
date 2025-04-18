@@ -13,6 +13,7 @@
         <a href="#" class="text-grayText hover:text-neonGreen transition-colors">À propos</a>
         <a href="#" class="text-grayText hover:text-neonGreen transition-colors">Portfolio</a>
         <a href="{{ route('service.index') }}" class="{{ request()->routeIs('service.*') ? 'text-neonGreen' : 'text-grayText hover:text-neonGreen' }} transition-colors">Services</a>
+        <a href="{{ route('skill.index') }}" class="{{ request()->routeIs('skill.*') ? 'text-neonGreen' : 'text-grayText hover:text-neonGreen' }} transition-colors">Compétences</a>
         <a href="#" class="text-grayText hover:text-neonGreen transition-colors">Contact</a>
     </div>
 
