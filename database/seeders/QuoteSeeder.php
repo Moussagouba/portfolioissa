@@ -23,7 +23,7 @@ class QuoteSeeder extends Seeder
                 'service' => 'Branding',
                 'budget' => '1000€ - 2000€',
                 'message' => 'Bonjour, je suis à la recherche d\'un graphiste pour créer l\'identité visuelle de ma nouvelle entreprise de conseil en développement durable. J\'aurais besoin d\'un logo, d\'une charte graphique et de quelques modèles de documents. Merci de me contacter pour en discuter.',
-                'status' => 'processed',
+                'status' => 'completed',
                 'created_at' => Carbon::now()->subDays(30),
             ],
             [
@@ -33,7 +33,7 @@ class QuoteSeeder extends Seeder
                 'service' => 'Design Graphique',
                 'budget' => '500€ - 1000€',
                 'message' => 'Je souhaite faire réaliser des flyers et des affiches pour promouvoir mon événement culturel qui aura lieu en septembre. J\'ai déjà quelques idées de design, mais j\'ai besoin d\'un professionnel pour les concrétiser. Pouvez-vous me faire une proposition ?',
-                'status' => 'processed',
+                'status' => 'completed',
                 'created_at' => Carbon::now()->subDays(25),
             ],
             [
@@ -53,7 +53,7 @@ class QuoteSeeder extends Seeder
                 'service' => 'Illustration',
                 'budget' => '300€ - 500€',
                 'message' => 'Je suis auteure d\'un livre pour enfants et je cherche un illustrateur pour créer environ 10 illustrations. Le livre raconte l\'histoire d\'un petit renard qui découvre la forêt. J\'aimerais un style doux et coloré. Pouvez-vous me dire si ce projet vous intéresse ?',
-                'status' => 'processed',
+                'status' => 'completed',
                 'created_at' => Carbon::now()->subDays(15),
             ],
             [
