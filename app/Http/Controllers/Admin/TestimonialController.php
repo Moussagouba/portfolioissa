@@ -40,10 +40,10 @@ class TestimonialController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'position' => 'required|string|max:255',
+            'position' => 'nullable|string|max:255',
             'company' => 'nullable|string|max:255',
             'content' => 'required|string',
-            'avatar' => 'nullable|string',
+            'avatar' => 'nullable|image|mimes:jpeg,jpg,png|max:1024',
             'rating' => 'required|integer|min:1|max:5',
             'featured' => 'boolean',
             'order' => 'nullable|integer',
@@ -54,6 +54,11 @@ class TestimonialController extends Controller
         // Définir l'ordre par défaut si non fourni
         if (empty($data['order'])) {
             $data['order'] = Testimonial::max('order') + 1;
+        }
+        
+        // Gérer l'upload de l'avatar
+        if ($request->hasFile('avatar')) {
+            $data['avatar'] = $request->file('avatar')->store('testimonials', 'public');
         }
         
         // Créer le témoignage
@@ -84,17 +89,28 @@ class TestimonialController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'position' => 'required|string|max:255',
+            'position' => 'nullable|string|max:255',
             'company' => 'nullable|string|max:255',
             'content' => 'required|string',
-            'avatar' => 'nullable|string',
+            'avatar' => 'nullable|image|mimes:jpeg,jpg,png|max:1024',
             'rating' => 'required|integer|min:1|max:5',
             'featured' => 'boolean',
             'order' => 'nullable|integer',
         ]);
         
-        // Mettre à jour le témoignage
-        $testimonial->update($request->all());
+        // Gérer l'upload du nouvel avatar
+        if ($request->hasFile('avatar')) {
+            // Supprimer l'ancien avatar si il existe
+            if ($testimonial->avatar && \Storage::disk('public')->exists($testimonial->avatar)) {
+                \Storage::disk('public')->delete($testimonial->avatar);
+            }
+            $data = $request->all();
+            $data['avatar'] = $request->file('avatar')->store('testimonials', 'public');
+            $testimonial->update($data);
+        } else {
+            // Mettre à jour sans changer l'avatar
+            $testimonial->update($request->all());
+        }
         
         return redirect()->route('admin.testimonials.index')->with('success', 'Témoignage mis à jour avec succès');
     }
@@ -107,6 +123,11 @@ class TestimonialController extends Controller
      */
     public function destroy(Testimonial $testimonial)
     {
+        // Supprimer l'avatar associé si il existe
+        if ($testimonial->avatar && \Storage::disk('public')->exists($testimonial->avatar)) {
+            \Storage::disk('public')->delete($testimonial->avatar);
+        }
+        
         $testimonial->delete();
         
         return redirect()->route('admin.testimonials.index')->with('success', 'Témoignage supprimé avec succès');

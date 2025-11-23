@@ -32,7 +32,7 @@ class AdminController extends Controller
         $recentQuotes = Quote::orderBy('created_at', 'desc')->take(5)->get();
 
         // Statistiques des demandes de devis par mois (pour le graphique)
-        $quotesByMonth = Quote::select(DB::raw('MONTH(created_at) as month'), DB::raw('COUNT(*) as count'))
+        $quotesByMonth = Quote::select(DB::raw("CAST(strftime('%m', created_at) as INTEGER) as month"), DB::raw('COUNT(*) as count'))
             ->whereYear('created_at', date('Y'))
             ->groupBy('month')
             ->orderBy('month')
@@ -233,7 +233,7 @@ class AdminController extends Controller
      */
     public function markQuoteAsProcessed(Quote $quote)
     {
-        $quote->update(['status' => 'processed']);
+        $quote->update(['status' => 'completed']);
 
         return redirect()->route('admin.quotes')->with('success', 'Demande de devis marquée comme traitée');
     }

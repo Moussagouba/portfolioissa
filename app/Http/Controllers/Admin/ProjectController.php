@@ -43,10 +43,10 @@ class ProjectController extends Controller
             'title' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:projects',
             'description' => 'required|string',
-            'client' => 'required|string|max:255',
-            'date' => 'required|string|max:255',
+            'client' => 'nullable|string|max:255',
+            'date' => 'nullable|string|max:255',
             'category' => 'required|string|max:255',
-            'image' => 'required|string',
+            'image' => 'nullable|image|mimes:jpeg,jpg,png,webp|max:2048',
             'gallery' => 'nullable|array',
             'featured' => 'boolean',
             'order' => 'nullable|integer',
@@ -62,6 +62,11 @@ class ProjectController extends Controller
         // Définir l'ordre par défaut si non fourni
         if (empty($data['order'])) {
             $data['order'] = Project::max('order') + 1;
+        }
+        
+        // Gérer l'upload de l'image
+        if ($request->hasFile('image')) {
+            $data['image'] = $request->file('image')->store('projects', 'public');
         }
         
         // Créer le projet
@@ -94,10 +99,10 @@ class ProjectController extends Controller
             'title' => 'required|string|max:255',
             'slug' => 'nullable|string|max:255|unique:projects,slug,' . $project->id,
             'description' => 'required|string',
-            'client' => 'required|string|max:255',
-            'date' => 'required|string|max:255',
+            'client' => 'nullable|string|max:255',
+            'date' => 'nullable|string|max:255',
             'category' => 'required|string|max:255',
-            'image' => 'required|string',
+            'image' => 'nullable|image|mimes:jpeg,jpg,png,webp|max:2048',
             'gallery' => 'nullable|array',
             'featured' => 'boolean',
             'order' => 'nullable|integer',
@@ -108,6 +113,15 @@ class ProjectController extends Controller
         // Générer un slug si non fourni
         if (empty($data['slug'])) {
             $data['slug'] = Str::slug($data['title']);
+        }
+        
+        // Gérer l'upload de la nouvelle image
+        if ($request->hasFile('image')) {
+            // Supprimer l'ancienne image si elle existe
+            if ($project->image && \Storage::disk('public')->exists($project->image)) {
+                \Storage::disk('public')->delete($project->image);
+            }
+            $data['image'] = $request->file('image')->store('projects', 'public');
         }
         
         // Mettre à jour le projet
@@ -124,6 +138,11 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
+        // Supprimer l'image associée si elle existe
+        if ($project->image && \Storage::disk('public')->exists($project->image)) {
+            \Storage::disk('public')->delete($project->image);
+        }
+        
         $project->delete();
         
         return redirect()->route('admin.projects.index')->with('success', 'Projet supprimé avec succès');

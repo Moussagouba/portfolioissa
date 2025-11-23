@@ -68,4 +68,14 @@ class Quote extends Model
             default => 'gray',
         };
     }
+
+    /**
+     * Check if the quote has been processed.
+     *
+     * @return bool
+     */
+    public function isProcessed(): bool
+    {
+        return in_array($this->status, ['completed', 'cancelled']);
+    }
 }

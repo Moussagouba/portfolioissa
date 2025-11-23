@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\SkillController as AdminSkillController;
+use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
+use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,6 +23,11 @@ Route::get('/devis/confirmation', [ServiceController::class, 'quoteSuccess'])->n
 
 // Route pour la page des compétences (skills)
 Route::get('/skills', [SkillController::class, 'index'])->name('skill.index');
+
+// Redirection de secours pour l'authentification
+Route::get('/login', function () {
+    return redirect()->route('admin.login');
+})->name('login');
 
 // Routes pour l'administration
 Route::prefix('admin')->name('admin.')->group(function () {
@@ -48,30 +56,27 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('/quotes/{quote}', [AdminController::class, 'deleteQuote'])->name('quotes.delete');
 
         // Gestion des compétences
-        Route::get('/skills', [Admin\SkillController::class, 'index'])->name('skills.index');
-        Route::get('/skills/create', [Admin\SkillController::class, 'create'])->name('skills.create');
-        Route::post('/skills', [Admin\SkillController::class, 'store'])->name('skills.store');
-        Route::get('/skills/{skill}/edit', [Admin\SkillController::class, 'edit'])->name('skills.edit');
-        Route::put('/skills/{skill}', [Admin\SkillController::class, 'update'])->name('skills.update');
-        Route::delete('/skills/{skill}', [Admin\SkillController::class, 'destroy'])->name('skills.destroy');
+        Route::get('/skills', [AdminSkillController::class, 'index'])->name('skills.index');
+        Route::get('/skills/create', [AdminSkillController::class, 'create'])->name('skills.create');
+        Route::post('/skills', [AdminSkillController::class, 'store'])->name('skills.store');
+        Route::get('/skills/{skill}/edit', [AdminSkillController::class, 'edit'])->name('skills.edit');
+        Route::put('/skills/{skill}', [AdminSkillController::class, 'update'])->name('skills.update');
+        Route::delete('/skills/{skill}', [AdminSkillController::class, 'destroy'])->name('skills.destroy');
 
         // Gestion des projets
-        Route::get('/projects', [Admin\ProjectController::class, 'index'])->name('projects.index');
-        Route::get('/projects/create', [Admin\ProjectController::class, 'create'])->name('projects.create');
-        Route::post('/projects', [Admin\ProjectController::class, 'store'])->name('projects.store');
-        Route::get('/projects/{project}/edit', [Admin\ProjectController::class, 'edit'])->name('projects.edit');
-        Route::put('/projects/{project}', [Admin\ProjectController::class, 'update'])->name('projects.update');
-        Route::delete('/projects/{project}', [Admin\ProjectController::class, 'destroy'])->name('projects.destroy');
+        Route::get('/projects', [AdminProjectController::class, 'index'])->name('projects.index');
+        Route::get('/projects/create', [AdminProjectController::class, 'create'])->name('projects.create');
+        Route::post('/projects', [AdminProjectController::class, 'store'])->name('projects.store');
+        Route::get('/projects/{project}/edit', [AdminProjectController::class, 'edit'])->name('projects.edit');
+        Route::put('/projects/{project}', [AdminProjectController::class, 'update'])->name('projects.update');
+        Route::delete('/projects/{project}', [AdminProjectController::class, 'destroy'])->name('projects.destroy');
 
         // Gestion des témoignages
-        Route::get('/testimonials', [Admin\TestimonialController::class, 'index'])->name('testimonials.index');
-        Route::get('/testimonials/create', [Admin\TestimonialController::class, 'create'])->name('testimonials.create');
-        Route::post('/testimonials', [Admin\TestimonialController::class, 'store'])->name('testimonials.store');
-        Route::get('/testimonials/{testimonial}/edit', [Admin\TestimonialController::class, 'edit'])->name('testimonials.edit');
-        Route::put('/testimonials/{testimonial}', [Admin\TestimonialController::class, 'update'])->name('testimonials.update');
-        Route::delete('/testimonials/{testimonial}', [Admin\TestimonialController::class, 'destroy'])->name('testimonials.destroy');
+        Route::get('/testimonials', [AdminTestimonialController::class, 'index'])->name('testimonials.index');
+        Route::get('/testimonials/create', [AdminTestimonialController::class, 'create'])->name('testimonials.create');
+        Route::post('/testimonials', [AdminTestimonialController::class, 'store'])->name('testimonials.store');
+        Route::get('/testimonials/{testimonial}/edit', [AdminTestimonialController::class, 'edit'])->name('testimonials.edit');
+        Route::put('/testimonials/{testimonial}', [AdminTestimonialController::class, 'update'])->name('testimonials.update');
+        Route::delete('/testimonials/{testimonial}', [AdminTestimonialController::class, 'destroy'])->name('testimonials.destroy');
     });
 });
-
-
-
