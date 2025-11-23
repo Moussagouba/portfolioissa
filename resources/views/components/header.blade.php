@@ -13,11 +13,11 @@
 
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{{ route('home') }}" class="text-white hover:text-brand-green transition-colors">Accueil</a>
-                <a href="#" class="text-white hover:text-brand-green transition-colors">Portfolio</a>
-                <a href="#" class="text-white hover:text-brand-green transition-colors">À Propos</a>
+                <a href="{{ route('portfolio.index') }}" class="text-white hover:text-brand-green transition-colors">Portfolio</a>
+                <a href="{{ route('about') }}" class="text-white hover:text-brand-green transition-colors">À Propos</a>
                 <a href="{{ route('service.index') }}" class="text-white hover:text-brand-green transition-colors">Services</a>
                 <a href="{{ route('skill.index') }}" class="text-white hover:text-brand-green transition-colors">Compétences</a>
-                <a href="#" class="text-white hover:text-brand-green transition-colors">Contact</a>
+                <a href="{{ route('contact.index') }}" class="text-white hover:text-brand-green transition-colors">Contact</a>
             </div>
 
             <div>

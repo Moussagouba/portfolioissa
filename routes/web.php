@@ -24,6 +24,22 @@ Route::get('/devis/confirmation', [ServiceController::class, 'quoteSuccess'])->n
 // Route pour la page des compétences (skills)
 Route::get('/skills', [SkillController::class, 'index'])->name('skill.index');
 
+// Routes pour le portfolio
+Route::get('/portfolio', [App\Http\Controllers\ProjectController::class, 'index'])->name('portfolio.index');
+Route::get('/portfolio/{project:slug}', [App\Http\Controllers\ProjectController::class, 'show'])->name('portfolio.show');
+
+// Route pour la page à propos
+Route::get('/about', function () {
+    return view('about', [
+        'title' => 'À Propos | Issa Cissé - Graphiste',
+        'bodyClass' => 'bg-darkBg text-white'
+    ]);
+})->name('about');
+
+// Routes pour le contact
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
+
 // Redirection de secours pour l'authentification
 Route::get('/login', function () {
     return redirect()->route('admin.login');
