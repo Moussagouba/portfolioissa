@@ -42,7 +42,13 @@
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $skill->icon ?? 'N/A' }}
+                                @if($skill->icon)
+                                    <div class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg">
+                                        {!! $skill->icon !!}
+                                    </div>
+                                @else
+                                    <span class="text-gray-400">N/A</span>
+                                @endif
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                 {{ $skill->order }}
