@@ -22,7 +22,7 @@
                     <h2 class="text-3xl font-bold mb-6">Mon Histoire</h2>
                     <div class="space-y-4 text-gray-300 leading-relaxed">
                         <p>
-                            Bonjour, je suis <span class="text-white font-medium">Issa Cissé Ngahama</span>, graphiste et designer basé en Guinée.
+                            Bonjour, je suis <span class="text-white font-medium">Issa Cissé Ngahama</span>, graphiste et designer basé au burkina faso.
                             Passionné par le design graphique et l'identité visuelle, je transforme les idées en créations visuelles percutantes.
                         </p>
                         <p>
