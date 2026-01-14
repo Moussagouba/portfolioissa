@@ -75,14 +75,14 @@
                 <!-- Image principale -->
                 <div class="md:col-span-2">
                     <label for="image" class="block text-sm font-medium text-gray-700 mb-2">Image principale</label>
-                    
+
                     @if($project->image)
                         <div class="mb-3">
                             <p class="text-sm text-gray-600 mb-2">Image actuelle :</p>
-                            <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" class="max-w-xs rounded-lg border border-gray-300">
+                            <img src="{{ str_starts_with($project->image, 'http') ? $project->image : asset('storage/' . $project->image) }}" alt="{{ $project->title }}" class="max-w-xs rounded-lg border border-gray-300">
                         </div>
                     @endif
-                    
+
                     <input type="file" name="image" id="image" accept="image/jpeg,image/jpg,image/png,image/webp"
                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-neonGreen focus:border-transparent"
                            onchange="previewImage(event)">
@@ -90,7 +90,7 @@
                     @error('image')
                         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                     @enderror
-                    
+
                     <!-- Aperçu de la nouvelle image -->
                     <div id="imagePreview" class="mt-3 hidden">
                         <p class="text-sm text-gray-600 mb-2">Nouvelle image :</p>
@@ -145,7 +145,7 @@
             const preview = document.getElementById('imagePreview');
             const img = preview.querySelector('img');
             const file = event.target.files[0];
-            
+
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {

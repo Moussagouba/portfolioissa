@@ -32,7 +32,7 @@
             <!-- Project Image -->
             @if($project->image)
                 <div class="mb-12 rounded-2xl overflow-hidden">
-                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" class="w-full">
+                    <img src="{{ str_starts_with($project->image, 'http') ? $project->image : asset('storage/' . $project->image) }}" alt="{{ $project->title }}" class="w-full">
                 </div>
             @else
                 <div class="mb-12 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 aspect-video flex items-center justify-center">
@@ -58,7 +58,7 @@
                         @foreach($relatedProjects as $related)
                             <a href="{{ route('portfolio.show', $related->slug) }}" class="group relative overflow-hidden rounded-xl aspect-square bg-gray-800">
                                 @if($related->image)
-                                    <img src="{{ asset('storage/' . $related->image) }}" alt="{{ $related->title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                    <img src="{{ str_starts_with($related->image, 'http') ? $related->image : asset('storage/' . $related->image) }}" alt="{{ $related->title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                                 @else
                                     <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
                                         <svg class="w-16 h-16 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

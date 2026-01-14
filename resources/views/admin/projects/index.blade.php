@@ -13,7 +13,7 @@
             @foreach($projects as $project)
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                     @if($project->image)
-                        <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-full h-48 object-cover">
+                        <img src="{{ str_starts_with($project->image, 'http') ? $project->image : asset('storage/' . $project->image) }}" alt="{{ $project->title }}" class="w-full h-48 object-cover">
                     @else
                         <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
                             <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@
                             </svg>
                         </div>
                     @endif
-                    
+
                     <div class="p-4">
                         <div class="flex items-start justify-between mb-2">
                             <h3 class="text-lg font-bold text-gray-900">{{ $project->title }}</h3>
@@ -31,9 +31,9 @@
                                 </span>
                             @endif
                         </div>
-                        
+
                         <p class="text-sm text-gray-600 mb-3">{{ Str::limit($project->description, 100) }}</p>
-                        
+
                         <div class="flex items-center justify-between text-sm text-gray-500 mb-3">
                             <span class="flex items-center">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@
                                 {{ $project->category }}
                             </span>
                         </div>
-                        
+
                         <div class="flex items-center justify-between pt-3 border-t border-gray-200">
                             <span class="text-xs text-gray-500">{{ $project->date }}</span>
                             <div class="flex space-x-2">
