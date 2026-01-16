@@ -1,7 +1,25 @@
 // Fonctions interactives pour le site
 
+// Fonction pour le menu hamburger
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('hamburger-icon');
+    if (menu.classList.contains('hidden')) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+    } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+    }
+    menu.classList.toggle('hidden');
+}
+
 // Fonction pour les accordéons FAQ
 document.addEventListener('DOMContentLoaded', function() {
+    // Event listener pour le hamburger
+    const hamburger = document.getElementById('hamburger');
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMenu);
+    }
+
     // Simple toggle pour les éléments FAQ
     document.querySelectorAll('.border-b').forEach(item => {
         item.addEventListener('click', event => {
