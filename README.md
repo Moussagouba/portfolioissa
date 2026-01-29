@@ -64,3 +64,92 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+APP_NAME=Laravel
+APP_ENV=production
+APP_KEY=base64:dBqNWQl+7E1WxdrKa46SifPdABOeiAP6FhSNuD71avs=
+APP_DEBUG=true
+APP_URL=https://ngahama.com
+
+APP_LOCALE=en
+APP_FALLBACK_LOCALE=en
+APP_FAKER_LOCALE=en_US
+
+APP_MAINTENANCE_DRIVER=file
+PHP_CLI_SERVER_WORKERS=4
+BCRYPT_ROUNDS=12
+
+LOG_CHANNEL=stack
+LOG_STACK=single
+LOG_LEVEL=error
+
+# =========================
+
+# DATABASE (MYSQL HOSTINGER)
+
+# =========================
+
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=u515411095_cisseissa
+DB_USERNAME=u515411095_cisseissa
+DB_PASSWORD="6nW=&r?;ay"
+
+# =========================
+
+# SESSIONS / CACHE / QUEUE
+
+# =========================
+
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+SESSION_ENCRYPT=false
+SESSION_PATH=/
+SESSION_DOMAIN=null
+
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+
+# =========================
+
+# FILES
+
+# =========================
+
+FILESYSTEM_DISK=local
+
+# =========================
+
+# MAIL (désactivé en prod)
+
+# =========================
+
+MAIL_MAILER=log
+MAIL_FROM_ADDRESS="hello@ngahama.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+# =========================
+
+# REDIS (désactivé)
+
+# =========================
+
+REDIS_CLIENT=phpredis
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+# =========================
+
+# AWS (vide)
+
+# =========================
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+VITE_APP_NAME="${APP_NAME}"
