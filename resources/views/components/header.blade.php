@@ -17,7 +17,7 @@
                 </svg>
             </button>
 
-            <div id="mobile-menu" class="hidden md:flex items-start space-x-8 flex-col md:flex-row space-y-6 md:space-y-0 fixed top-0 left-0 w-80 h-full bg-darkBg transform -translate-x-full transition-transform duration-300 md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:translate-x-0 md:bg-transparent z-50 md:z-auto p-6 md:p-0">
+            <div id="mobile-menu" class="md:flex items-start space-x-8 flex-col md:flex-row space-y-6 md:space-y-0 fixed top-0 left-0 w-80 h-full bg-darkBg transform -translate-x-full transition-transform duration-300 md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:translate-x-0 md:bg-transparent z-50 md:z-auto p-6 md:p-0">
                 <button onclick="toggleMenu()" class="md:hidden self-end text-white text-2xl mb-4">&times;</button>
                 <a href="{{ route('home') }}" class="text-white hover:text-brand-green transition-colors text-lg md:text-base">Accueil</a>
                 <a href="{{ route('portfolio.index') }}" class="text-white hover:text-brand-green transition-colors text-lg md:text-base">Portfolio</a>
