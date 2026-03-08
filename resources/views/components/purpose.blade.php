@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="md:w-1/2">
-                    <img src="https://placehold.co/500x400" alt="Processus de Design" class="rounded-lg shadow-lg mb-8">
+                    <img src="{{asset('asset/500 x 400.png')}}" alt="Processus de Design" class="rounded-lg shadow-lg mb-8">
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-white p-6 rounded-lg shadow">
