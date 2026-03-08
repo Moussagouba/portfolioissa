@@ -19,10 +19,12 @@
                         <a href="#contact" class="bg-white/10 text-white px-6 py-3 rounded-full font-medium hover:bg-white/20 transition-colors">Me Contacter</a>
                     </div>
                 </div>
+  <div id="imageSlider" class="relative ">
+                        <img src="{{asset('asset/400x500.png')}}" alt="Issa Cissé - Graphiste" class="rounded-lg max-w-full h-auto" id="heroImage">
+                        <img src="{{asset('asset/400 x 500(1).png')}}" alt="Issa Cissé - Graphiste" class="rounded-lg max-w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-1000" id="heroImage2">
+                        <img src="{{asset('asset/400 x 500.png')}}" alt="Issa Cissé - Graphiste" class="rounded-lg max-w-full h-auto absolute inset-0 opacity-0 transition-opacity duration-1000" id="heroImage3">
+                    </div>
 
-                <div class="md:w-1/2 flex justify-center">
-                    <img src="https://placehold.co/400x500" alt="Issa Cissé - Graphiste" class="rounded-lg max-w-full h-auto">
-                </div>
             </div>
 
             <div class="flex justify-between items-center mt-16">
